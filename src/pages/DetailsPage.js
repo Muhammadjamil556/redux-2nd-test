@@ -11,7 +11,7 @@ export const DetailsPage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCreatorsDataByName(params.CreatorsByName));
-  }, []);
+  }, [params]);
 
   const {
     CreatorsByName: { CreatorsByNameData, CreatorsByNameDataLoading },
